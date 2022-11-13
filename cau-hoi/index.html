@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Chị ♥ Em</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Facebook and Twitter integration -->
+  <meta property="og:title" content=""/>
+  <meta property="og:image" content=""/>
+  <meta property="og:url" content=""/>
+  <meta property="og:site_name" content=""/>
+  <meta property="og:description" content=""/>
+  <meta name="twitter:title" content="" />
+  <meta name="twitter:image" content="" />
+  <meta name="twitter:url" content="" />
+  <meta name="twitter:card" content="" />
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+  
+  <!-- Theme style  -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- jQuery -->
+  <script src="js/jquery.min.js"></script>
+
+  <!-- Modernizr JS -->
+  <script type="text/javascript">
+    $(function () {
+        showText("#msg", 'Hế nhô cục cưng, tới đây chắc biết tui đang tính làm gì rồi he.<br>Hông biết tỏ tình sao, coi thiên hạ thì hay bày trò này nên là tui làm theo luôn :))).<br>Giờ trả lời người ta câu hỏi nhe!!!', 0, 100);   
+      });
+      var showText = function (target, message, index, interval) {   
+      if (index < message.length) {
+        $(target).append(message[index++]);
+        setTimeout(function () { showText(target, message, index, interval); }, interval);
+      }
+    }
+  </script>
+
+</head>
+<body>
+    <div class="heart"></div>
+    
+    <div id="msg" style="justify-content: left;"></div>
+  </div>
+</body>
+</html>
